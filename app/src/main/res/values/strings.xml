@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MDDatePicker</string>
+
+    <string name="previous">Go to previous</string>
+    <string name="next">Go to next</string>
+    <string name="calendar">Calendar</string>
+</resources>
