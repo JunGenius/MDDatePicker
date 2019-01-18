@@ -2,11 +2,14 @@ package com.qj.picker;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.support.annotation.ColorInt;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.StringRes;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.qj.picker.calendarview.CalendarDay;
 import com.qj.picker.calendarview.MaterialCalendarView;
 import com.qj.picker.tool.DateUtil;
@@ -59,6 +62,9 @@ public class MDCalendarDialog {
         }
         mcv.setSelectedDate(mBuilder.currentDate);
         mcv.setCurrentDate(mBuilder.currentDate);
+        mcv.setSelectionColor(mBuilder.selectionColor);
+
+        btnSure.setBackgroundResource(mBuilder.sureBackGroundColor);
 
         btnSure.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +94,11 @@ public class MDCalendarDialog {
 
         private Context mContext = null;
 
+        private @ColorInt
+        int selectionColor = Color.parseColor("#03a9f4");
+
+        private @DrawableRes int sureBackGroundColor = R.drawable.login_btn_bg;
+
         private OnDetermineSelectorListener onDetermineSelectorListener = null;
 
         public Builder(Context context) {
@@ -106,6 +117,16 @@ public class MDCalendarDialog {
 
         public Builder setCurrentDate(Date date) {
             currentDate = date;
+            return this;
+        }
+
+        public Builder setSelectionColor(@StringRes int color) {
+            selectionColor = color;
+            return this;
+        }
+
+        public Builder setSureBackGroudColor(@StringRes int color) {
+            sureBackGroundColor = color;
             return this;
         }
 
