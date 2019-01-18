@@ -4,4 +4,9 @@
     <string name="previous">Go to previous</string>
     <string name="next">Go to next</string>
     <string name="calendar">Calendar</string>
+
+
+    <string name="icon_description">日期选择器图标</string>
+
+    <string name="btn_sure">确  定</string>
 </resources>
