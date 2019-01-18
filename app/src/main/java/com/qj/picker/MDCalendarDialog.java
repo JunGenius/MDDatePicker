@@ -33,7 +33,7 @@ public class MDCalendarDialog {
     private AlertDialog dialog = null;
 
     MDCalendarDialog(MDCalendarDialog.Builder builder) {
-        this.mBuilder = mBuilder;
+        this.mBuilder = builder;
     }
 
     public void show() {
