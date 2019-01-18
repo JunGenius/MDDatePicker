@@ -4,7 +4,7 @@ eg:
 
 1.maven { url 'https://www.jitpack.io' }
 
-2.implementation 'com.github.JunGenius:MDDatePicker:1.0.5'
+2.implementation 'com.github.JunGenius:MDDatePicker:1.1.0'
 
 代码:
 
