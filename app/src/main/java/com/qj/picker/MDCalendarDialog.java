@@ -120,12 +120,12 @@ public class MDCalendarDialog {
             return this;
         }
 
-        public Builder setSelectionColor(@StringRes int color) {
+        public Builder setSelectionColor(@ColorInt int color) {
             selectionColor = color;
             return this;
         }
 
-        public Builder setSureBackGroudColor(@StringRes int color) {
+        public Builder setSureBackGroudColor(@DrawableRes int color) {
             sureBackGroundColor = color;
             return this;
         }
