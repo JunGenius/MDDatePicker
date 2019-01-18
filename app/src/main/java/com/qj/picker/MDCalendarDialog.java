@@ -5,7 +5,6 @@ import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.ColorInt;
 import android.support.annotation.DrawableRes;
-import android.support.annotation.StringRes;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -97,7 +96,7 @@ public class MDCalendarDialog {
         private @ColorInt
         int selectionColor = Color.parseColor("#03a9f4");
 
-        private @DrawableRes int sureBackGroundColor = R.drawable.login_btn_bg;
+        private @DrawableRes int sureBackGroundColor = R.drawable.default_button_bg;
 
         private OnDetermineSelectorListener onDetermineSelectorListener = null;
 
