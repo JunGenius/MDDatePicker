@@ -2,9 +2,25 @@
 
 eg:
 
-1.maven { url 'https://www.jitpack.io' }
+1. build.gradle
 
-2.implementation 'com.github.JunGenius:MDDatePicker:1.1.0'
+                allprojects {
+                     repositories {
+                         google()
+                         jcenter()
+
+                         maven { url 'https://www.jitpack.io' }
+                     }
+                 }
+
+
+2. app  build.gradle
+
+                dependencies {
+                    implementation 'com.github.JunGenius:MDDatePicker:1.1.0'
+                 }
+
+
 
 代码:
 
