@@ -6,22 +6,10 @@
 
 eg:
 
-1. build.gradle
-
-                allprojects {
-                     repositories {
-                         google()
-                         jcenter()
-
-                         maven { url 'https://www.jitpack.io' }
-                     }
-                 }
-
-
-2. app  build.gradle
+1. app  build.gradle
 
                 dependencies {
-                    implementation 'com.github.JunGenius:MDDatePicker:1.1.0'
+                    implementation 'com.qj.picker:MDDatePicker:1.0.1'
                  }
 
 
